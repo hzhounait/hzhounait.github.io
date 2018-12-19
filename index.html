@@ -1,95 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<title>Financial Tracker - Assignment 3</title>
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebFlow</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section class="wrapper">
-		<h1>Transaction Tracker</h1>
-		<form id="frm-transactions">
-			<fieldset>
-				<legend>Add Transaction</legend>
-				<div class="frm-group">
-					<input id="description" 
-					class="frm-control" 
-					type="text" 
-					name="description" 
-					value="this is the description field" 
-					size="30" 
-					placeholder="description" 
-					required />
-				</div>
-				<div class="frm-group">
-					<select id="type" class="frm-control" name="type" required>
-						<option value="">type</option>
-						<option value="debit">debit</option>
-						<option value="credit">credit</option>
-					</select>
-				</div>
-				<div class="frm-group">
-					<i class="edit fa fa-dollar"></i>
-					<input 
-						id="amount" 
-						class="frm-control"
-						type="number"
-						name="currency"
-						min="0"
-						max="9999"
-						step="0.01"
-						size="4"
-						value="12.00"
-						placeholder="0.00"
-						required
-					/>
-				</div>
-				<div class="frm-group">
-					<input class="frm-control" type="submit" value="add" />
-				</div>
-				<div class="error"></div>
-			</fieldset>
-		</form>
-		<h2>Transactions</h2>
-		<table class="transactions">
-			<thead>
-				<tr>
-					<td colspan="4" class="right">
-						Total debits: <span class="total debits">$0.00</span>
-						Total credits: <span class="total credits">$0.00</span>
-					</td>
-				</tr>
-				<tr>
-					<th>Description</th>
-					<th>Type</th>
-					<th class="amount">Amount</th>
-					<th class="tools">Tools</th>
-				</tr>				
-			</thead>
-			<tbody>
-			
-			</tbody>
-		</table>
-	</section>
-	<template>
-		<tr class="credit">
-			<td>Description</td>
-			<td class="credit">Type</td>
-			<td class="amounts">Amount</td>
-			<td class="tools">
-				<i class="fa fa-trash-o delete"></i>
-			</td>
-		</tr>
-		<tr class="debit">
-			<td>Description</td>
-			<td class="debit">Type</td>
-			<td class="amounts">Amount</td>
-			<td class="tools">
-				<i class="fa fa-trash-o delete"></i>
-			</td>
-		</tr>
-	</template>
-	<script src="js/main.js"></script>
+    <video autoplay muted loop id="myVideo">
+    <source src="video/Edmonton.mp4" type="video/mp4">
+    </video>
+
+    <audio autoplay>
+        <source src="music/回転木馬.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <nav class="site-nav">
+        <i class="fas fa-user-circle"></i>
+        <a id="musicPlay" href="#"><i class="fas fa-volume-up"></i></a>        
+    </nav>
+
+    <div class="slideshow">
+        <div class="slideshows">
+            <ul class="slideshowul">
+                <!-- <li>
+                    <img src="img/jane_doe.jpg" class="photo" />
+                </li>
+                <li>
+                    <span class="annotation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis debitis maiores a ipsum, id rerum, amet incidunt omnis suscipit</span>
+                </li>
+                <li>
+                    
+                </li> -->
+            </ul> 
+            <div class="btnGroup">
+                <span class="next"><a class="btnNext" href="#" data-id="0">Next</a></span>  
+                <!-- <span class="yes"><a class="btnYes" href="#">Yes I Do</a></span>
+                <span class="no"><a class="btnNo" href="#">No I Don't</a></span>  -->
+            </div>                
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
