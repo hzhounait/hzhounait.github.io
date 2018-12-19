@@ -10,9 +10,8 @@ $('document').ready(function(e){
             $('i', this).toggleClass("fa-volume-up fa-volume-off");
             if (!isPlayed) {
                 isPlayed = true;
-                console.log(document.querySelector('audio'))
+                
                 document.querySelector('audio').pause();
-                document.querySelector('audio').currentTime = 0;
             } else {
                 isPlayed = false;
                 document.querySelector('audio').play();
