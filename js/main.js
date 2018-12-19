@@ -1,4 +1,12 @@
 $('document').ready(function(e){
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if (!isChrome) {
+        $('#iframeAudio').remove()
+    }
+    else {
+        $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
+    }
+
     let isLoaded = false;
 
     if(!isLoaded){
@@ -9,8 +17,7 @@ $('document').ready(function(e){
         $('#musicPlay').click(function () {
             $('i', this).toggleClass("fa-volume-up fa-volume-off");
             if (!isPlayed) {
-                isPlayed = true;
-                
+                isPlayed = true;       
                 document.querySelector('audio').pause();
             } else {
                 isPlayed = false;
