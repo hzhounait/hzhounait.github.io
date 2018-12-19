@@ -1,111 +1,95 @@
 <!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Photobook</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-
-        <header class="page-marque clearfix">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="img/hambuger-menu.png" alt="hambuger">
-                    </a>
-                </li>
-                <li>
-                    <p>PHOTOSTORY</p>                    
-                </li>
-                <li>
-                    <span>780-978-5975</span>
-                </li>
-            </ul>
-            <!-- <ol>
-                
-            </ol> -->
-        </header>
-        
-
-        <main class="clearfix">
-            <ul class="page-contents">
-                <li>
-                    <h1>CREATE YOUR OWN PHOTOSTORY</h1>
-                </li>
-                <li>
-                    <p>Make your photobook online</p>
-                </li>
-                <li>
-                    <img src="img/camera.png" alt="camera">
-                </li>
-                <li>
-                    <button>
-                        MAKE YOUR PHOTOBOOK
-                    </button>
-                </li>
-            </ul>
-            
-            <div class="product-functions">
-                <ol>
-                    <li>
-                        <h1>READY</h1>
-                    </li>
-                    <li>
-                        <h1>SOLUTIONS</h1>
-                    </li>
-                </ol>
-                <ul>
-                    <li>
-                        <img src="img/cloud.png" alt="cloud">
-                        <p>Download<br>Photos</p>
-                    </li>
-                    <li>
-                        <img src="img/customize.png" alt="customize">
-                        <p>Design your<br>photobook</p>
-                    </li>
-                    <li>
-                        <img src="img/finance.png" alt="finance">
-                        <p>Pay<br>for service</p>
-                    </li>
-                    <li>
-                        <img src="img/delivery.png" alt="delivery">
-                        <p>Get your<br>photobook</p>
-                    </li>
-                </ul>
-            </div>
-        </main>
-
-        <footer>
-            <ul class="clearfix">
-                <li>
-                    <h5>&copy; 2015</h5>
-                </li>
-                <li>
-                    <p>Photobook.</p>
-                </li>
-                <li>                    
-                    <h5>All rights reserved</h5>
-                </li>
-            </ul>
-            <ol>
-                <li>
-                    <img src="img/facebook.png" alt="fb">
-                </li>
-                <li>
-                    <img src="img/twitter.png" alt="tt">
-                </li>
-                <li>
-                    <img src="img/printerest.png" alt="pt">
-                </li>
-                <li>
-                    <img src="img/google.png" alt="g+">
-                </li>
-            </ol> 
-        </footer>
-    </body>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Financial Tracker - Assignment 3</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<section class="wrapper">
+		<h1>Transaction Tracker</h1>
+		<form id="frm-transactions">
+			<fieldset>
+				<legend>Add Transaction</legend>
+				<div class="frm-group">
+					<input id="description" 
+					class="frm-control" 
+					type="text" 
+					name="description" 
+					value="this is the description field" 
+					size="30" 
+					placeholder="description" 
+					required />
+				</div>
+				<div class="frm-group">
+					<select id="type" class="frm-control" name="type" required>
+						<option value="">type</option>
+						<option value="debit">debit</option>
+						<option value="credit">credit</option>
+					</select>
+				</div>
+				<div class="frm-group">
+					<i class="edit fa fa-dollar"></i>
+					<input 
+						id="amount" 
+						class="frm-control"
+						type="number"
+						name="currency"
+						min="0"
+						max="9999"
+						step="0.01"
+						size="4"
+						value="12.00"
+						placeholder="0.00"
+						required
+					/>
+				</div>
+				<div class="frm-group">
+					<input class="frm-control" type="submit" value="add" />
+				</div>
+				<div class="error"></div>
+			</fieldset>
+		</form>
+		<h2>Transactions</h2>
+		<table class="transactions">
+			<thead>
+				<tr>
+					<td colspan="4" class="right">
+						Total debits: <span class="total debits">$0.00</span>
+						Total credits: <span class="total credits">$0.00</span>
+					</td>
+				</tr>
+				<tr>
+					<th>Description</th>
+					<th>Type</th>
+					<th class="amount">Amount</th>
+					<th class="tools">Tools</th>
+				</tr>				
+			</thead>
+			<tbody>
+			
+			</tbody>
+		</table>
+	</section>
+	<template>
+		<tr class="credit">
+			<td>Description</td>
+			<td class="credit">Type</td>
+			<td class="amounts">Amount</td>
+			<td class="tools">
+				<i class="fa fa-trash-o delete"></i>
+			</td>
+		</tr>
+		<tr class="debit">
+			<td>Description</td>
+			<td class="debit">Type</td>
+			<td class="amounts">Amount</td>
+			<td class="tools">
+				<i class="fa fa-trash-o delete"></i>
+			</td>
+		</tr>
+	</template>
+	<script src="js/main.js"></script>
+</body>
 </html>
