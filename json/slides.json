@@ -1,0 +1,62 @@
+[
+   {
+    "id": 1,
+    "img": "boy.png",
+    "annotation": "从前有个男孩"   
+   },
+   {
+    "id": 2,
+    "img": "idiot.png",
+    "annotation": "他又蠢又傻，说话不经过大脑"  
+   },
+   {
+    "id": 3,
+    "img": "angry.png",
+    "annotation": "这不，昨天晚上就惹了小祖宗生了一晚上闷气"  
+   },
+   {
+    "id": 4,
+    "img": "sad.png",
+    "annotation": "他啊现在...是又悔又难过" 
+   },
+   {
+    "id": 5,
+    "img": "knee.png",
+    "annotation": "事情既然已经发生，不求原谅，男孩只想着要做些让小祖宗心宽的事情" 
+   },
+   {
+    "id": 6,
+    "img": "decide.png",
+    "annotation": "男孩下定决心" 
+   },
+   {
+    "id": 7,
+    "img": "better-love.png",
+    "annotation": "以后对小祖宗，加倍宠，加倍珍惜，加倍尊重" 
+   },
+   {
+    "id": 8,
+    "img": "heart.png",
+    "annotation": "用真心换真爱" 
+   },
+   {
+    "id": 9,
+    "img": "pray.png",
+    "annotation": "好了啦...求求你！" 
+   },
+   {
+    "id": 10,
+    "img": "zxy.png",
+    "annotation": "可爱温柔善良漂亮天生丽质慧质兰心秀外慧中暗香盈袖闭月羞花沉鱼落雁倾国倾城温婉娴淑的张歆越！" 
+   },
+   {
+    "id": 11,
+    "img": "zh.png",
+    "annotation": "周璜这个傻子骗子王八蛋真的错了！" 
+   },
+   {
+    "id": 12,
+    "img": "qiuqiuni.png",
+    "annotation": "就..就给他个机会好吗！？嘤嘤嘤" 
+   }
+]
