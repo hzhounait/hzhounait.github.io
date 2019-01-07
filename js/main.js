@@ -87,7 +87,7 @@ $('document').ready(function(e){
                             const display = 
                             `
                             <li>
-                                <span class="annotation">按钮好像失效了呢，试试Yes鸭 (°ཀ°)</span>
+                                <span class="annotation">按钮好像失效了呢，试试OK鸭 (°ཀ°)</span>
                             </li>
                             `  
                              $('.slideshowul').html(display);
